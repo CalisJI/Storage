@@ -1,0 +1,14 @@
+F:\VISUAL PROJECT\MODBUS_Sample\bin\Debug\MODBUS_Sample.exe.config
+F:\VISUAL PROJECT\MODBUS_Sample\bin\Debug\MODBUS_Sample.exe
+F:\VISUAL PROJECT\MODBUS_Sample\bin\Debug\MODBUS_Sample.pdb
+F:\VISUAL PROJECT\MODBUS_Sample\bin\Debug\ModBus_RTU.dll
+F:\VISUAL PROJECT\MODBUS_Sample\bin\Debug\ModBus_RTU.pdb
+F:\VISUAL PROJECT\MODBUS_Sample\bin\Debug\ModBus_RTU.xml
+F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.csprojAssemblyReference.cache
+F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.Form1.resources
+F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.Properties.Resources.resources
+F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.csproj.GenerateResource.cache
+F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.csproj.CoreCompileInputs.cache
+F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.csproj.CopyComplete
+F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.exe
+F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.pdb

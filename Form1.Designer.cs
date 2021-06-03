@@ -30,7 +30,6 @@ namespace MODBUS_Sample
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,10 +38,10 @@ namespace MODBUS_Sample
             this.Read_modbus = new System.Windows.Forms.Button();
             this.Write_modbus = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tb_salveID = new System.Windows.Forms.TextBox();
+            this.tb_Func = new System.Windows.Forms.TextBox();
+            this.tb_starAddress = new System.Windows.Forms.TextBox();
+            this.tb_Register = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,18 +50,14 @@ namespace MODBUS_Sample
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Connect_btn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tb_message = new System.Windows.Forms.TextBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(89, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(74, 20);
-            this.textBox2.TabIndex = 0;
             // 
             // textBox3
             // 
@@ -109,7 +104,7 @@ namespace MODBUS_Sample
             // 
             // Read_modbus
             // 
-            this.Read_modbus.Location = new System.Drawing.Point(243, 257);
+            this.Read_modbus.Location = new System.Drawing.Point(250, 257);
             this.Read_modbus.Name = "Read_modbus";
             this.Read_modbus.Size = new System.Drawing.Size(75, 23);
             this.Read_modbus.TabIndex = 2;
@@ -125,42 +120,44 @@ namespace MODBUS_Sample
             this.Write_modbus.TabIndex = 2;
             this.Write_modbus.Text = "Write";
             this.Write_modbus.UseVisualStyleBackColor = true;
+            this.Write_modbus.Click += new System.EventHandler(this.Write_modbus_Click);
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(231, 26);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
+            this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox5.Size = new System.Drawing.Size(227, 210);
             this.textBox5.TabIndex = 3;
             // 
-            // textBox6
+            // tb_salveID
             // 
-            this.textBox6.Location = new System.Drawing.Point(92, 16);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(74, 20);
-            this.textBox6.TabIndex = 0;
+            this.tb_salveID.Location = new System.Drawing.Point(92, 16);
+            this.tb_salveID.Name = "tb_salveID";
+            this.tb_salveID.Size = new System.Drawing.Size(74, 20);
+            this.tb_salveID.TabIndex = 0;
             // 
-            // textBox7
+            // tb_Func
             // 
-            this.textBox7.Location = new System.Drawing.Point(92, 54);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(74, 20);
-            this.textBox7.TabIndex = 0;
+            this.tb_Func.Location = new System.Drawing.Point(92, 54);
+            this.tb_Func.Name = "tb_Func";
+            this.tb_Func.Size = new System.Drawing.Size(74, 20);
+            this.tb_Func.TabIndex = 0;
             // 
-            // textBox8
+            // tb_starAddress
             // 
-            this.textBox8.Location = new System.Drawing.Point(92, 92);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(74, 20);
-            this.textBox8.TabIndex = 0;
+            this.tb_starAddress.Location = new System.Drawing.Point(92, 92);
+            this.tb_starAddress.Name = "tb_starAddress";
+            this.tb_starAddress.Size = new System.Drawing.Size(74, 20);
+            this.tb_starAddress.TabIndex = 0;
             // 
-            // textBox9
+            // tb_Register
             // 
-            this.textBox9.Location = new System.Drawing.Point(92, 129);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(74, 20);
-            this.textBox9.TabIndex = 0;
+            this.tb_Register.Location = new System.Drawing.Point(92, 129);
+            this.tb_Register.Name = "tb_Register";
+            this.tb_Register.Size = new System.Drawing.Size(74, 20);
+            this.tb_Register.TabIndex = 0;
             // 
             // label5
             // 
@@ -174,29 +171,29 @@ namespace MODBUS_Sample
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 57);
+            this.label6.Location = new System.Drawing.Point(6, 57);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.Size = new System.Drawing.Size(76, 13);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Start addres";
+            this.label6.Text = "Function Code";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 99);
+            this.label7.Location = new System.Drawing.Point(12, 99);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(70, 13);
             this.label7.TabIndex = 1;
-            this.label7.Text = "label1";
+            this.label7.Text = "Start Address";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(28, 136);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.Size = new System.Drawing.Size(46, 13);
             this.label8.TabIndex = 1;
-            this.label8.Text = "label1";
+            this.label8.Text = "Register";
             // 
             // comboBox1
             // 
@@ -216,11 +213,11 @@ namespace MODBUS_Sample
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.Connect_btn);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
@@ -232,31 +229,58 @@ namespace MODBUS_Sample
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // Connect_btn
+            // 
+            this.Connect_btn.Location = new System.Drawing.Point(62, 158);
+            this.Connect_btn.Name = "Connect_btn";
+            this.Connect_btn.Size = new System.Drawing.Size(75, 23);
+            this.Connect_btn.TabIndex = 2;
+            this.Connect_btn.Text = "Connect";
+            this.Connect_btn.UseVisualStyleBackColor = true;
+            this.Connect_btn.Click += new System.EventHandler(this.Connect_btn_Click);
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.tb_starAddress);
+            this.groupBox2.Controls.Add(this.tb_salveID);
+            this.groupBox2.Controls.Add(this.tb_Func);
+            this.groupBox2.Controls.Add(this.tb_message);
+            this.groupBox2.Controls.Add(this.tb_Register);
+            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Location = new System.Drawing.Point(12, 205);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 169);
+            this.groupBox2.Size = new System.Drawing.Size(200, 199);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // button3
+            // label9
             // 
-            this.button3.Location = new System.Drawing.Point(62, 158);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "CONNECT";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(28, 171);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(45, 13);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Mesage";
+            // 
+            // tb_message
+            // 
+            this.tb_message.Location = new System.Drawing.Point(92, 168);
+            this.tb_message.Name = "tb_message";
+            this.tb_message.Size = new System.Drawing.Size(74, 20);
+            this.tb_message.TabIndex = 0;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(89, 55);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(74, 21);
+            this.comboBox3.TabIndex = 5;
             // 
             // Form1
             // 
@@ -281,7 +305,6 @@ namespace MODBUS_Sample
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -290,10 +313,10 @@ namespace MODBUS_Sample
         private System.Windows.Forms.Button Read_modbus;
         private System.Windows.Forms.Button Write_modbus;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tb_salveID;
+        private System.Windows.Forms.TextBox tb_Func;
+        private System.Windows.Forms.TextBox tb_starAddress;
+        private System.Windows.Forms.TextBox tb_Register;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -302,8 +325,11 @@ namespace MODBUS_Sample
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Connect_btn;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tb_message;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }
 
