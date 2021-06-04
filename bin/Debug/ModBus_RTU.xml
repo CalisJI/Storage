@@ -4,6 +4,11 @@
         <name>ModBus_RTU</name>
     </assembly>
     <members>
+        <member name="M:ModBus_RTU.ModBus_RS485.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:ModBus_RTU.ModBus_RS485.Opened(System.String,System.Int32,System.Int32,System.IO.Ports.Parity,System.IO.Ports.StopBits)">
             <summary>
             
@@ -50,6 +55,16 @@
             <returns></returns>
         </member>
         <member name="M:ModBus_RTU.ModBus_RS485.SendFc3(System.Byte,System.UInt16,System.UInt16,System.Int16[]@)">
+            <summary>
+            
+            </summary>
+            <param name="address"></param>
+            <param name="start"></param>
+            <param name="registers"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModBus_RTU.ModBus_RS485.SendFc04(System.Byte,System.UInt16,System.UInt16,System.Int16[]@)">
             <summary>
             
             </summary>

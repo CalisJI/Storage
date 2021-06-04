@@ -50,18 +50,18 @@ namespace MODBUS_Sample
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.Connect_btn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.tb_message = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(89, 93);
+            this.textBox3.Location = new System.Drawing.Point(89, 68);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(74, 20);
             this.textBox3.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace MODBUS_Sample
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 58);
+            this.label2.Location = new System.Drawing.Point(25, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 1;
@@ -87,7 +87,7 @@ namespace MODBUS_Sample
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 100);
+            this.label3.Location = new System.Drawing.Point(25, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 1;
@@ -96,7 +96,7 @@ namespace MODBUS_Sample
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 137);
+            this.label4.Location = new System.Drawing.Point(25, 103);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 13);
             this.label4.TabIndex = 1;
@@ -104,7 +104,7 @@ namespace MODBUS_Sample
             // 
             // Read_modbus
             // 
-            this.Read_modbus.Location = new System.Drawing.Point(250, 257);
+            this.Read_modbus.Location = new System.Drawing.Point(254, 205);
             this.Read_modbus.Name = "Read_modbus";
             this.Read_modbus.Size = new System.Drawing.Size(75, 23);
             this.Read_modbus.TabIndex = 2;
@@ -114,7 +114,7 @@ namespace MODBUS_Sample
             // 
             // Write_modbus
             // 
-            this.Write_modbus.Location = new System.Drawing.Point(342, 257);
+            this.Write_modbus.Location = new System.Drawing.Point(352, 205);
             this.Write_modbus.Name = "Write_modbus";
             this.Write_modbus.Size = new System.Drawing.Size(75, 23);
             this.Write_modbus.TabIndex = 2;
@@ -128,7 +128,7 @@ namespace MODBUS_Sample
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox5.Size = new System.Drawing.Size(227, 210);
+            this.textBox5.Size = new System.Drawing.Size(223, 167);
             this.textBox5.TabIndex = 3;
             // 
             // tb_salveID
@@ -137,27 +137,30 @@ namespace MODBUS_Sample
             this.tb_salveID.Name = "tb_salveID";
             this.tb_salveID.Size = new System.Drawing.Size(74, 20);
             this.tb_salveID.TabIndex = 0;
+            this.tb_salveID.Text = "2";
             // 
             // tb_Func
             // 
-            this.tb_Func.Location = new System.Drawing.Point(92, 54);
+            this.tb_Func.Location = new System.Drawing.Point(92, 42);
             this.tb_Func.Name = "tb_Func";
             this.tb_Func.Size = new System.Drawing.Size(74, 20);
             this.tb_Func.TabIndex = 0;
             // 
             // tb_starAddress
             // 
-            this.tb_starAddress.Location = new System.Drawing.Point(92, 92);
+            this.tb_starAddress.Location = new System.Drawing.Point(92, 68);
             this.tb_starAddress.Name = "tb_starAddress";
             this.tb_starAddress.Size = new System.Drawing.Size(74, 20);
             this.tb_starAddress.TabIndex = 0;
+            this.tb_starAddress.Text = "0";
             // 
             // tb_Register
             // 
-            this.tb_Register.Location = new System.Drawing.Point(92, 129);
+            this.tb_Register.Location = new System.Drawing.Point(92, 94);
             this.tb_Register.Name = "tb_Register";
             this.tb_Register.Size = new System.Drawing.Size(74, 20);
             this.tb_Register.TabIndex = 0;
+            this.tb_Register.Text = "8";
             // 
             // label5
             // 
@@ -171,7 +174,7 @@ namespace MODBUS_Sample
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 57);
+            this.label6.Location = new System.Drawing.Point(6, 45);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 13);
             this.label6.TabIndex = 1;
@@ -180,7 +183,7 @@ namespace MODBUS_Sample
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 99);
+            this.label7.Location = new System.Drawing.Point(12, 75);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 13);
             this.label7.TabIndex = 1;
@@ -189,7 +192,7 @@ namespace MODBUS_Sample
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(28, 136);
+            this.label8.Location = new System.Drawing.Point(28, 101);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 13);
             this.label8.TabIndex = 1;
@@ -198,7 +201,7 @@ namespace MODBUS_Sample
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(89, 128);
+            this.comboBox1.Location = new System.Drawing.Point(89, 94);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(74, 21);
             this.comboBox1.TabIndex = 4;
@@ -224,14 +227,22 @@ namespace MODBUS_Sample
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(15, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 187);
+            this.groupBox1.Size = new System.Drawing.Size(197, 154);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(89, 41);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(74, 21);
+            this.comboBox3.TabIndex = 5;
+            // 
             // Connect_btn
             // 
-            this.Connect_btn.Location = new System.Drawing.Point(62, 158);
+            this.Connect_btn.Location = new System.Drawing.Point(63, 121);
             this.Connect_btn.Name = "Connect_btn";
             this.Connect_btn.Size = new System.Drawing.Size(75, 23);
             this.Connect_btn.TabIndex = 2;
@@ -251,42 +262,34 @@ namespace MODBUS_Sample
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Location = new System.Drawing.Point(12, 205);
+            this.groupBox2.Location = new System.Drawing.Point(12, 172);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 199);
+            this.groupBox2.Size = new System.Drawing.Size(200, 166);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
+            // tb_message
+            // 
+            this.tb_message.Location = new System.Drawing.Point(92, 120);
+            this.tb_message.Name = "tb_message";
+            this.tb_message.Size = new System.Drawing.Size(74, 20);
+            this.tb_message.TabIndex = 0;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(28, 171);
+            this.label9.Location = new System.Drawing.Point(28, 123);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(45, 13);
             this.label9.TabIndex = 1;
             this.label9.Text = "Mesage";
             // 
-            // tb_message
-            // 
-            this.tb_message.Location = new System.Drawing.Point(92, 168);
-            this.tb_message.Name = "tb_message";
-            this.tb_message.Size = new System.Drawing.Size(74, 20);
-            this.tb_message.TabIndex = 0;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(89, 55);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(74, 21);
-            this.comboBox3.TabIndex = 5;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 450);
+            this.ClientSize = new System.Drawing.Size(478, 361);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBox5);

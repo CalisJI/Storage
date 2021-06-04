@@ -12,3 +12,17 @@ F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.csproj.CoreCompileInputs
 F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.csproj.CopyComplete
 F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.exe
 F:\VISUAL PROJECT\MODBUS_Sample\obj\Debug\MODBUS_Sample.pdb
+C:\Users\PC\source\repos\Storage\obj\Debug\MODBUS_Sample.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Storage\obj\Debug\MODBUS_Sample.Form1.resources
+C:\Users\PC\source\repos\Storage\obj\Debug\MODBUS_Sample.Properties.Resources.resources
+C:\Users\PC\source\repos\Storage\obj\Debug\MODBUS_Sample.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\Storage\obj\Debug\MODBUS_Sample.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Storage\obj\Debug\MODBUS_Sample.exe
+C:\Users\PC\source\repos\Storage\obj\Debug\MODBUS_Sample.pdb
+C:\Users\PC\source\repos\Storage\bin\Debug\MODBUS_Sample.exe.config
+C:\Users\PC\source\repos\Storage\bin\Debug\MODBUS_Sample.exe
+C:\Users\PC\source\repos\Storage\bin\Debug\MODBUS_Sample.pdb
+C:\Users\PC\source\repos\Storage\bin\Debug\ModBus_RTU.dll
+C:\Users\PC\source\repos\Storage\bin\Debug\ModBus_RTU.pdb
+C:\Users\PC\source\repos\Storage\bin\Debug\ModBus_RTU.xml
+C:\Users\PC\source\repos\Storage\obj\Debug\MODBUS_Sample.csproj.CopyComplete
